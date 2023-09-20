@@ -1,0 +1,14 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the CanBo_init() hook (in hooks/CanBo.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="CanBo-IDCanbo-<%%VALUE(IDCanbo)%%>" class="CanBo-IDCanbo text-right"><%%SELECT%%><%%VALUE(IDCanbo)%%><%%ENDSELECT%%></td>
+		<td id="CanBo-IDMember-<%%VALUE(IDCanbo)%%>" class="CanBo-IDMember"><%%SELECT%%><%%VALUE(IDMember)%%><%%ENDSELECT%%></td>
+		<td id="CanBo-Hovaten-<%%VALUE(IDCanbo)%%>" class="CanBo-Hovaten"><%%SELECT%%><%%VALUE(Hovaten)%%><%%ENDSELECT%%></td>
+		<td id="CanBo-Gioitinh-<%%VALUE(IDCanbo)%%>" class="CanBo-Gioitinh"><%%SELECT%%><%%VALUE(Gioitinh)%%><%%ENDSELECT%%></td>
+		<td id="CanBo-Chucvu-<%%VALUE(IDCanbo)%%>" class="CanBo-Chucvu"><%%SELECT%%><%%VALUE(Chucvu)%%><%%ENDSELECT%%></td>
+		<td id="CanBo-Donvi-<%%VALUE(IDCanbo)%%>" class="CanBo-Donvi text-right"><%%SELECT%%><%%VALUE(Donvi)%%><%%ENDSELECT%%></td>
+		<td id="CanBo-Thongtin-<%%VALUE(IDCanbo)%%>" class="CanBo-Thongtin"><%%SELECT%%><%%VALUE(Thongtin)%%><%%ENDSELECT%%></td>

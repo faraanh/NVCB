@@ -1,0 +1,17 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the STCN_init() hook (in hooks/STCN.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="STCN-IDSTCN-<%%VALUE(IDSTCN)%%>" class="STCN-IDSTCN text-right"><%%SELECT%%><%%VALUE(IDSTCN)%%><%%ENDSELECT%%></td>
+		<td id="STCN-Sodangki-<%%VALUE(IDSTCN)%%>" class="STCN-Sodangki"><%%SELECT%%><%%VALUE(Sodangki)%%><%%ENDSELECT%%></td>
+		<td id="STCN-Ngaydangki-<%%VALUE(IDSTCN)%%>" class="STCN-Ngaydangki"><%%SELECT%%><%%VALUE(Ngaydangki)%%><%%ENDSELECT%%></td>
+		<td id="STCN-Ngaylap-<%%VALUE(IDSTCN)%%>" class="STCN-Ngaylap"><%%SELECT%%><%%VALUE(Ngaylap)%%><%%ENDSELECT%%></td>
+		<td id="STCN-CBLap-<%%VALUE(IDSTCN)%%>" class="STCN-CBLap"><%%SELECT%%><%%VALUE(CBLap)%%><%%ENDSELECT%%></td>
+		<td id="STCN-DVLap-<%%VALUE(IDSTCN)%%>" class="STCN-DVLap text-right"><%%SELECT%%><%%VALUE(DVLap)%%><%%ENDSELECT%%></td>
+		<td id="STCN-CBQuanly-<%%VALUE(IDSTCN)%%>" class="STCN-CBQuanly"><%%SELECT%%><%%VALUE(CBQuanly)%%><%%ENDSELECT%%></td>
+		<td id="STCN-DVQuanly-<%%VALUE(IDSTCN)%%>" class="STCN-DVQuanly text-right"><%%SELECT%%><%%VALUE(DVQuanly)%%><%%ENDSELECT%%></td>
+		<td id="STCN-Doituong-<%%VALUE(IDSTCN)%%>" class="STCN-Doituong text-right"><%%SELECT%%><%%VALUE(Doituong)%%><%%ENDSELECT%%></td>
+		<td id="STCN-Status-<%%VALUE(IDSTCN)%%>" class="STCN-Status"><%%SELECT%%><%%VALUE(Status)%%><%%ENDSELECT%%></td>

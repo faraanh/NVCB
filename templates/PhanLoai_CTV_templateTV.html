@@ -1,0 +1,9 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the PhanLoai_CTV_init() hook (in hooks/PhanLoai_CTV.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="PhanLoai_CTV-ID-<%%VALUE(ID)%%>" class="PhanLoai_CTV-ID text-right"><%%SELECT%%><%%VALUE(ID)%%><%%ENDSELECT%%></td>
+		<td id="PhanLoai_CTV-Phanloai-<%%VALUE(ID)%%>" class="PhanLoai_CTV-Phanloai"><%%SELECT%%><%%VALUE(Phanloai)%%><%%ENDSELECT%%></td>

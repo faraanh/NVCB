@@ -1,0 +1,11 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the STCNSTT_init() hook (in hooks/STCNSTT.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="STCNSTT-Phanloai-<%%VALUE(IDSTT)%%>" class="STCNSTT-Phanloai"><%%SELECT%%><%%VALUE(Phanloai)%%><%%ENDSELECT%%></td>
+		<td id="STCNSTT-Danhmuc-<%%VALUE(IDSTT)%%>" class="STCNSTT-Danhmuc"><%%SELECT%%><%%VALUE(Danhmuc)%%><%%ENDSELECT%%></td>
+		<td id="STCNSTT-Heloai-<%%VALUE(IDSTT)%%>" class="STCNSTT-Heloai"><%%SELECT%%><%%VALUE(Heloai)%%><%%ENDSELECT%%></td>
+		<td id="STCNSTT-IDSTCN-<%%VALUE(IDSTT)%%>" class="STCNSTT-IDSTCN text-right"><%%SELECT%%><%%VALUE(IDSTCN)%%><%%ENDSELECT%%></td>

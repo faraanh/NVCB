@@ -1,0 +1,15 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the BL3_init() hook (in hooks/BL3.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="BL3-IDBL3-<%%VALUE(IDBL3)%%>" class="BL3-IDBL3 text-right"><%%SELECT%%><%%VALUE(IDBL3)%%><%%ENDSELECT%%></td>
+		<td id="BL3-IDCTV-<%%VALUE(IDBL3)%%>" class="BL3-IDCTV text-right"><%%SELECT%%><%%VALUE(IDCTV)%%><%%ENDSELECT%%></td>
+		<td id="BL3-Ngaydauki-<%%VALUE(IDBL3)%%>" class="BL3-Ngaydauki"><%%SELECT%%><%%VALUE(Ngaydauki)%%><%%ENDSELECT%%></td>
+		<td id="BL3-Ngaycuoiki-<%%VALUE(IDBL3)%%>" class="BL3-Ngaycuoiki"><%%SELECT%%><%%VALUE(Ngaycuoiki)%%><%%ENDSELECT%%></td>
+		<td id="BL3-CBPhanloai-<%%VALUE(IDBL3)%%>" class="BL3-CBPhanloai"><%%SELECT%%><%%VALUE(CBPhanloai)%%><%%ENDSELECT%%></td>
+		<td id="BL3-CHPhanloai-<%%VALUE(IDBL3)%%>" class="BL3-CHPhanloai"><%%SELECT%%><%%VALUE(CHPhanloai)%%><%%ENDSELECT%%></td>
+		<td id="BL3-Phanloai-<%%VALUE(IDBL3)%%>" class="BL3-Phanloai"><%%SELECT%%><%%VALUE(Phanloai)%%><%%ENDSELECT%%></td>
+		<td id="BL3-Nx_Dx-<%%VALUE(IDBL3)%%>" class="BL3-Nx_Dx"><%%SELECT%%><%%VALUE(Nx_Dx)%%><%%ENDSELECT%%></td>

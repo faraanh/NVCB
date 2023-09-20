@@ -1,0 +1,163 @@
+<!-- Edit this file to change the layout of the detail view print preview page -->
+
+
+<div class="panel-heading"><h3 class="panel-title">
+	<strong><%%DETAIL_VIEW_TITLE%%></strong>
+	<div class="hidden-print pull-right">
+		<div class="btn-group">
+			<button type="button" id="print" onclick="window.print();" title="<%%TRANSLATION(Print)%%>" class="btn btn-primary"><i class="glyphicon glyphicon-print"></i> <%%TRANSLATION(Print)%%></button>
+			<button type="submit" id="back" title="<%%TRANSLATION(Cancel Printing)%%>" class="btn btn-default"><i class="glyphicon glyphicon-remove-circle"></i> <%%TRANSLATION(Cancel Printing)%%></button>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</h3></div>
+
+<div class="panel-body">
+	<fieldset class="form-horizontal">
+		<!-- Field: ID -->
+		<div class="form-group CTV-IDCTV" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">ID</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(IDCTV)%%></div>
+			</div>
+		</div>
+		<!-- Field: Sodangky -->
+		<div class="form-group CTV-Sodangky" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Sodangky</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(Sodangky)%%></div>
+			</div>
+		</div>
+		<!-- Field: Ngaydangky -->
+		<div class="form-group CTV-Ngaydangky" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Ngaydangky</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(Ngaydangky)%%></div>
+			</div>
+		</div>
+		<!-- Field: LoaiCTV -->
+		<div class="form-group CTV-LoaiCTV" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">LoaiCTV</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="LoaiCTV<%%RND1%%>"><%%COMBOTEXT(LoaiCTV)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Bidanh -->
+		<div class="form-group CTV-Bidanh" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Bidanh</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(Bidanh)%%></div>
+			</div>
+		</div>
+		<!-- Field: NgayPhanloai -->
+		<div class="form-group CTV-NgayPLgannhat" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">NgayPhanloai</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(NgayPLgannhat)%%></div>
+			</div>
+		</div>
+		<!-- Field: NgaydenhanPL -->
+		<div class="form-group CTV-NgaydenhanPL" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">NgaydenhanPL</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(NgaydenhanPL)%%></div>
+			</div>
+		</div>
+		<!-- Field: DVSD -->
+		<div class="form-group CTV-DVSD" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">DVSD</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="DVSD<%%RND1%%>"><%%COMBOTEXT(DVSD)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: CBSD -->
+		<div class="form-group CTV-CBSD" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">CBSD</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="CBSD<%%RND1%%>"><%%COMBOTEXT(CBSD)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: DVLap -->
+		<div class="form-group CTV-DVLap" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">DVLap</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="DVLap<%%RND1%%>"><%%COMBOTEXT(DVLap)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: CBLap -->
+		<div class="form-group CTV-CBLap" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">CBLap</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="CBLap<%%RND1%%>"><%%COMBOTEXT(CBLap)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Status -->
+		<div class="form-group CTV-Status" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Status</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(Status)%%></div>
+			</div>
+		</div>
+		<!-- Field: Diaban -->
+		<div class="form-group CTV-Diaban" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Diaban</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(Diaban)%%></div>
+			</div>
+		</div>
+		<!-- Field: Doituong -->
+		<div class="form-group CTV-Doituong" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Doituong</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(Doituong)%%></div>
+			</div>
+		</div>
+		<!-- Field: Vitri -->
+		<div class="form-group CTV-Vitri" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Vitri</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(Vitri)%%></div>
+			</div>
+		</div>
+	</fieldset>
+</div>
+<script>
+	$j(function() {
+		// render read-only checkboxes in DVP
+		$j('form input[type=checkbox]:not(.hidden):checked')
+			.addClass('hidden')
+			.after('<i class="glyphicon glyphicon-check"></i>');
+		$j('form input[type=checkbox]:not(.hidden):not(:checked)')
+			.addClass('hidden')
+			.after('<i class="glyphicon glyphicon-unchecked"></i>')
+	})
+</script>
+<!-- child records -->
+<div class="panel-body">
+	<div id="CTV-children"></div>
+</div>
+
+<script>
+	$j(function() {
+		/* prevent loading child records in multiple DVP */
+		if($j('[id=CTV-children]').length > 1) return;
+
+		post(
+			'parent-children.php', {
+				ParentTable: 'CTV',
+				SelectedID: '<%%VALUE(IDCTV)%%>',
+				Operation: 'show-children-printable'
+			},
+			'CTV-children',
+			'disable-element',
+			'loading-element',
+			apply_persisting_children
+		);
+
+		$j('form').on('click', '#children-tabs button[data-target]', function() {
+			$j(this).toggleClass('active');
+			persist_expanded_child($j(this).attr('id'));
+		});
+	})
+</script>
+

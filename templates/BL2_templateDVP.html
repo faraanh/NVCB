@@ -1,0 +1,78 @@
+<!-- Edit this file to change the layout of the detail view print preview page -->
+
+
+<div class="panel-heading"><h3 class="panel-title">
+	<strong><%%DETAIL_VIEW_TITLE%%></strong>
+	<div class="hidden-print pull-right">
+		<div class="btn-group">
+			<button type="button" id="print" onclick="window.print();" title="<%%TRANSLATION(Print)%%>" class="btn btn-primary"><i class="glyphicon glyphicon-print"></i> <%%TRANSLATION(Print)%%></button>
+			<button type="submit" id="back" title="<%%TRANSLATION(Cancel Printing)%%>" class="btn btn-default"><i class="glyphicon glyphicon-remove-circle"></i> <%%TRANSLATION(Cancel Printing)%%></button>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</h3></div>
+
+<div class="panel-body">
+	<fieldset class="form-horizontal">
+		<!-- Field: IDBL2 -->
+		<div class="form-group BL2-IDBL2" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">IDBL2</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(IDBL2)%%></div>
+			</div>
+		</div>
+		<!-- Field: IDBL3 -->
+		<div class="form-group BL2-IDBL3" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">IDBL3</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="IDBL3<%%RND1%%>"><%%COMBOTEXT(IDBL3)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Ngaysinhhoat -->
+		<div class="form-group BL2-Ngaysinhhoat" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Ngaysinhhoat</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(Ngaysinhhoat)%%></div>
+			</div>
+		</div>
+		<!-- Field: Ngaybaotin -->
+		<div class="form-group BL2-Ngaybaotin" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Ngaybaotin</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(Ngaybaotin)%%></div>
+			</div>
+		</div>
+		<!-- Field: Tinbao -->
+		<div class="form-group BL2-Tinbao" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Tinbao</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="Tinbao<%%RND1%%>"><%%COMBOTEXT(Tinbao)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Xylytin -->
+		<div class="form-group BL2-Xylytin" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Xylytin</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="Xylytin<%%RND1%%>"><%%COMBOTEXT(Xylytin)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Ketqua -->
+		<div class="form-group BL2-Ketqua" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Ketqua</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="Ketqua<%%RND1%%>"><%%COMBOTEXT(Ketqua)%%></span></div>
+			</div>
+		</div>
+	</fieldset>
+</div>
+<script>
+	$j(function() {
+		// render read-only checkboxes in DVP
+		$j('form input[type=checkbox]:not(.hidden):checked')
+			.addClass('hidden')
+			.after('<i class="glyphicon glyphicon-check"></i>');
+		$j('form input[type=checkbox]:not(.hidden):not(:checked)')
+			.addClass('hidden')
+			.after('<i class="glyphicon glyphicon-unchecked"></i>')
+	})
+</script>

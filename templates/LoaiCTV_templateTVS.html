@@ -1,0 +1,11 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the LoaiCTV_init() hook (in hooks/LoaiCTV.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="LoaiCTV-IDLoaiCTV-<%%VALUE(IDLoaiCTV)%%>" class="LoaiCTV-IDLoaiCTV text-right"><%%VALUE(IDLoaiCTV)%%></td>
+		<td id="LoaiCTV-Loai-<%%VALUE(IDLoaiCTV)%%>" class="LoaiCTV-Loai"><%%VALUE(Loai)%%></td>
+		<td id="LoaiCTV-Ten-<%%VALUE(IDLoaiCTV)%%>" class="LoaiCTV-Ten"><%%VALUE(Ten)%%></td>
+		<td id="LoaiCTV-Ghichu-<%%VALUE(IDLoaiCTV)%%>" class="LoaiCTV-Ghichu"><%%VALUE(Ghichu)%%></td>
